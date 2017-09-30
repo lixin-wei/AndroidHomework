@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="魏礼鑫, 计153, 2015210401012"
+        android:textAlignment="center"
+        android:layout_marginBottom="2dp"/>
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
