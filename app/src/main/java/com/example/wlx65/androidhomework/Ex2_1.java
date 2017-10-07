@@ -1,9 +1,8 @@
-package com.example.wlx65.activitytest;
+package com.example.wlx65.androidhomework;
 
 import android.app.Activity;
-import android.support.annotation.AnyRes;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -14,7 +13,7 @@ import java.util.Locale;
 
 import static android.content.ContentValues.TAG;
 
-public class Ex2_1 extends Activity {
+public class Ex2_1 extends ActivityWithBack {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

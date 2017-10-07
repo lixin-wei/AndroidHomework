@@ -1,4 +1,4 @@
-package com.example.wlx65.activitytest;
+package com.example.wlx65.androidhomework;
 
 import org.junit.Test;
 

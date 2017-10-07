@@ -1,10 +1,10 @@
-package com.example.wlx65.activitytest;
+package com.example.wlx65.androidhomework;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-public class Ex1 extends Activity {
+public class Ex1 extends ActivityWithBack {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
