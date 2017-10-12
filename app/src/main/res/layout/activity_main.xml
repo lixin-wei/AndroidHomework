@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    android:fitsSystemWindows="true"
+    android:padding="15dp">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,23 +18,31 @@
         android:layout_height="match_parent"
         android:columnCount="3"
         android:orientation="horizontal">
+
         <Button
             android:id="@+id/button_ex1"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:text="作业1" />
+
         <Button
             android:id="@+id/button_ex2_1"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:text="作业2-1" />
+
         <Button
             android:id="@+id/button_ex2_2"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:text="作业2-2" />
+
         <Button
             android:id="@+id/button_ex3"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:text="作业3" />

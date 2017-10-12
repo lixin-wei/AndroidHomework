@@ -1,8 +1,6 @@
 package com.example.wlx65.androidhomework;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +11,7 @@ import java.util.Locale;
 
 import static android.content.ContentValues.TAG;
 
-public class Ex2_1 extends ActivityWithBack {
+public class Ex2_1 extends MyActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

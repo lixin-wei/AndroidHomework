@@ -1,28 +1,26 @@
 package com.example.wlx65.androidhomework;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.annotation.IdRes;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.TextView;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.ImageView;
+import android.widget.RadioGroup;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 import static android.content.ContentValues.TAG;
+import static android.widget.CompoundButton.*;
 
-public class Ex2_2 extends ActivityWithBack {
+public class Ex2_2 extends MyActivity {
     private class Area {
         String name;
         int id;
@@ -36,16 +34,50 @@ public class Ex2_2 extends ActivityWithBack {
             return name;
         }
     }
-
+    SimpleSpinner<Area> spin_province;
+    SimpleSpinner<Area> spin_city;
+    SimpleSpinner<Area> spin_area;
+    Button btn_fire;
+    RadioGroup rg_sex;
+    CheckBox cb_chinese;
+    CheckBox cb_math;
+    CheckBox cb_english;
+    ToggleButton tg_image;
+    ImageView img_star;
+    //显示科目复选框的汇总Toast
+    private void showCheckBoxToast() {
+        ArrayList<String> checkedList = new ArrayList<>();
+        if (cb_chinese.isChecked()) {
+            checkedList.add("语文");
+        }
+        if(cb_math.isChecked()) {
+            checkedList.add("数学");
+        }
+        if(cb_english.isChecked()) {
+            checkedList.add("英语");
+        }
+        StringBuilder text = new StringBuilder("选择了: ");
+        for (int i = 0; i < checkedList.size(); ++i) {
+            if (i != 0) text.append(", ");
+            text.append(checkedList.get(i));
+        }
+        showToast(Ex2_2.this, text.toString());
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ex2_2);
         //控件实例化
-        final SimpleSpinner<Area> spin_province = findViewById(R.id.spin_province);
-        final SimpleSpinner<Area> spin_city = findViewById(R.id.spin_city);
-        final SimpleSpinner<Area> spin_area = findViewById(R.id.spin_area);
-        Button btn_fire = (Button) findViewById(R.id.btn_fire);
+        spin_province = findViewById(R.id.spin_province);
+        spin_city = findViewById(R.id.spin_city);
+        spin_area = findViewById(R.id.spin_area);
+        btn_fire = findViewById(R.id.btn_fire);
+        rg_sex = findViewById(R.id.rg_sex);
+        cb_chinese = findViewById(R.id.cb_chinese);
+        cb_math = findViewById(R.id.cb_math);
+        cb_english = findViewById(R.id.cb_english);
+        tg_image = findViewById(R.id.tg_image);
+        img_star = findViewById(R.id.img_star);
         //地域数据库初始化
         AssetDataBaseHelper dbHelper = new AssetDataBaseHelper(this, "china_areas.db");
         try {
@@ -127,6 +159,40 @@ public class Ex2_2 extends ActivityWithBack {
             @Override
             public void onClick(View v) {
                 spin_city.setSelection(1, true);
+            }
+        });
+        //性别单选框
+        rg_sex.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
+                if (checkedId == R.id.radio_female) {
+                    showToast(Ex2_2.this, "女");
+                }
+                else {
+                    showToast(Ex2_2.this, "男");
+                }
+            }
+        });
+        //科目多选框
+        OnCheckedChangeListener listener_cb_change =  new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                showCheckBoxToast();
+            }
+        };
+        cb_chinese.setOnCheckedChangeListener(listener_cb_change);
+        cb_math.setOnCheckedChangeListener(listener_cb_change);
+        cb_english.setOnCheckedChangeListener(listener_cb_change);
+        //toggle button
+        tg_image.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    img_star.setImageResource(android.R.drawable.btn_star_big_on);
+                }
+                else {
+                    img_star.setImageResource(android.R.drawable.btn_star_big_off);
+                }
             }
         });
     }
