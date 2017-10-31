@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
@@ -31,9 +32,16 @@ public class MyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //半透明导航栏
+        //返回按钮
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+        //导航栏颜色
         getWindow().setNavigationBarColor(ContextCompat.getColor(getBaseContext(), R.color.colorPrimaryDark));
+
     }
+
     //立即显示Toast，覆盖上一个
     public void showToast(Context context, String text) {
         if (toast_current != null) {

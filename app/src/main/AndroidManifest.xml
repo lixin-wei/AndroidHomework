@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.example.wlx65.androidhomework.Main"
+            android:name=".Main"
             android:label="Android作业集">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,13 +20,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.wlx65.androidhomework.Ex1"
+            android:name=".Ex1"
             android:label="作业1" />
         <activity
-            android:name="com.example.wlx65.androidhomework.Ex2_1"
+            android:name=".Ex2_1"
             android:label="作业2-1" />
-        <activity android:name="com.example.wlx65.androidhomework.Ex2_2"
-            android:label="作业2-2"/>
+        <activity
+            android:name=".Ex2_2"
+            android:label="作业2-2" />
+        <activity android:name=".Ex3"
+            android:label="作业3"/>
     </application>
 
 </manifest>

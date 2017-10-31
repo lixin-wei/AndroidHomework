@@ -14,9 +14,10 @@ public class Main extends MyActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //实例化控件
-        Button button_ex1 = (Button) findViewById(R.id.button_ex1);
-        Button button_ex2_1 = (Button) findViewById(R.id.button_ex2_1);
-        Button button_ex2_2 = (Button) findViewById(R.id.button_ex2_2);
+        Button button_ex1 = findViewById(R.id.button_ex1);
+        Button button_ex2_1 = findViewById(R.id.button_ex2_1);
+        Button button_ex2_2 = findViewById(R.id.button_ex2_2);
+        Button button_ex3 = findViewById(R.id.button_ex3);
         //控件事件
         button_ex1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +37,13 @@ public class Main extends MyActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Main.this, Ex2_2.class);
+                startActivity(intent);
+            }
+        });
+        button_ex3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Main.this, Ex3.class);
                 startActivity(intent);
             }
         });
