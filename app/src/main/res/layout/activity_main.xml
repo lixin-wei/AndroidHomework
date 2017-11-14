@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:padding="15dp">
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,5 +45,65 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:text="作业3" />
+        <Button
+            android:id="@+id/button_ex4_1"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="作业4-1" />
+        <Button
+            android:id="@+id/button_ex4_2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="作业4-2" />
+        <Button
+            android:id="@+id/button_ex5"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="作业5" />
+        <Button
+            android:id="@+id/button_ex7_1"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="作业7-1" />
+        <Button
+            android:id="@+id/button_ex7_2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="作业7-2" />
+        <Button
+            android:id="@+id/button_ex7_3"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="作业7-3" />
+        <Button
+            android:id="@+id/button_ex8"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="作业8" />
+        <Button
+            android:id="@+id/button_ex10"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="作业10" />
+        <Button
+            android:id="@+id/button_ex11"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="作业11" />
+        <Button
+            android:id="@+id/button_ex12"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="作业12" />
     </GridLayout>
 </LinearLayout>

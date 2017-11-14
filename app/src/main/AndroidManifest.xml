@@ -28,8 +28,10 @@
         <activity
             android:name=".Ex2_2"
             android:label="作业2-2" />
-        <activity android:name=".Ex3"
-            android:label="作业3"/>
+        <activity
+            android:name=".Ex3"
+            android:label="作业3" />
+        <activity android:name=".Ex4_1"></activity>
     </application>
 
 </manifest>
