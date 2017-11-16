@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Android作业集</string>
+    <string name="test_list">
+        <item>sss</item>
+        <item>sss</item>
+        <item>sss</item>
+    </string>
 </resources>

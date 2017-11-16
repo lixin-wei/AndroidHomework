@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.example.wlx65.test"
         minSdkVersion 21
@@ -29,6 +29,9 @@ dependencies {
     compile 'com.github.ganfra:material-spinner:2.0.0'
     testCompile 'junit:junit:4.12'
 }
+
+
+
 
 
 
