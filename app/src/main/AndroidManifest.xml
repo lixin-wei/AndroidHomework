@@ -34,7 +34,8 @@
         <activity android:name=".Ex4_1" />
         <activity android:name=".Ex4_2" />
         <activity android:name=".Ex4_2_sub1" />
-        <activity android:name=".Ex4_2_sub2"></activity>
+        <activity android:name=".Ex4_2_sub2" />
+        <activity android:name=".Ex5"></activity>
     </application>
 
 </manifest>
