@@ -42,7 +42,8 @@
         <activity
             android:name=".Ex7_3"
             android:label="@string/title_activity_ex7_3"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Ex8"></activity>
     </application>
 
 </manifest>

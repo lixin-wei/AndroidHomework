@@ -24,6 +24,8 @@ public class Main extends MyActivity {
         Button button_ex7_1 = findViewById(R.id.button_ex7_1);
         Button button_ex7_2 = findViewById(R.id.button_ex7_2);
         Button button_ex7_3 = findViewById(R.id.button_ex7_3);
+        Button button_ex8 = findViewById(R.id.button_ex8);
+
         //控件事件
         button_ex1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,6 +94,13 @@ public class Main extends MyActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Main.this, Ex7_3.class);
+                startActivity(intent);
+            }
+        });
+        button_ex8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Main.this, Ex8.class);
                 startActivity(intent);
             }
         });
