@@ -88,5 +88,12 @@ public class Main extends MyActivity {
                 startActivity(intent);
             }
         });
+        button_ex7_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Main.this, Ex7_3.class);
+                startActivity(intent);
+            }
+        });
     }
 }

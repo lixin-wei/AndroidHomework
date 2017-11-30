@@ -38,7 +38,11 @@
         <activity android:name=".Ex5" />
         <activity android:name=".Ex7_1" />
         <activity android:name=".Ex7_1_sub" />
-        <activity android:name=".Ex7_2"></activity>
+        <activity android:name=".Ex7_2" />
+        <activity
+            android:name=".Ex7_3"
+            android:label="@string/title_activity_ex7_3"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
