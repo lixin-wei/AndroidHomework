@@ -37,7 +37,8 @@
         <activity android:name=".Ex4_2_sub2" />
         <activity android:name=".Ex5" />
         <activity android:name=".Ex7_1" />
-        <activity android:name="com.example.wlx65.test.Ex7_1_sub"></activity>
+        <activity android:name=".Ex7_1_sub" />
+        <activity android:name=".Ex7_2"></activity>
     </application>
 
 </manifest>

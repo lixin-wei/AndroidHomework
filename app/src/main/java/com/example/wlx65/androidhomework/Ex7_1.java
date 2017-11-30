@@ -1,8 +1,6 @@
 package com.example.wlx65.androidhomework;
 
 import android.annotation.SuppressLint;
-import android.app.ActionBar;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -10,8 +8,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
-
-import com.example.wlx65.test.Ex7_1_sub;
 
 import java.lang.reflect.Method;
 

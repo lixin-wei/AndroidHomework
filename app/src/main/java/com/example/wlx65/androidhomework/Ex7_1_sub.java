@@ -1,4 +1,4 @@
-package com.example.wlx65.test;
+package com.example.wlx65.androidhomework;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
