@@ -6,104 +6,137 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:padding="15dp">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
         android:text="魏礼鑫, 计153, 2015210401012"
-        android:textAlignment="center"
-        android:layout_marginBottom="2dp"/>
-    <GridLayout
+        android:textAlignment="center" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:columnCount="3"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button_ex1"
-            style="@style/Widget.AppCompat.Button.Colored"
+        <GridLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业1" />
+            android:columnCount="1"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button_ex2_1"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业2-1" />
+            <Button
+                android:id="@+id/button_ex1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业1 - 布局" />
 
-        <Button
-            android:id="@+id/button_ex2_2"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业2-2" />
+            <Button
+                android:id="@+id/button_ex2_1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业2-1 - UI1" />
 
-        <Button
-            android:id="@+id/button_ex3"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业3" />
-        <Button
-            android:id="@+id/button_ex4_1"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业4-1" />
-        <Button
-            android:id="@+id/button_ex4_2"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业4-2" />
-        <Button
-            android:id="@+id/button_ex5"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业5" />
-        <Button
-            android:id="@+id/button_ex7_1"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业7-1" />
-        <Button
-            android:id="@+id/button_ex7_2"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业7-2" />
-        <Button
-            android:id="@+id/button_ex7_3"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业7-3" />
-        <Button
-            android:id="@+id/button_ex8"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业8" />
-        <Button
-            android:id="@+id/button_ex10"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业10" />
-        <Button
-            android:id="@+id/button_ex11"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业11" />
-        <Button
-            android:id="@+id/button_ex12"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="作业12" />
-    </GridLayout>
+            <Button
+                android:id="@+id/button_ex2_2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业2- - UI2" />
+
+            <Button
+                android:id="@+id/button_ex3"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业3 - UI3" />
+
+            <Button
+                android:id="@+id/button_ex4_1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业4-1 - Activity生命周期与Log类" />
+
+            <Button
+                android:id="@+id/button_ex4_2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业4-2 - intent" />
+
+            <Button
+                android:id="@+id/button_ex5"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业5 - Menu" />
+
+            <Button
+                android:id="@+id/button_ex7_1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业7-1 - ActionBar 与 ToolBar" />
+
+            <Button
+                android:id="@+id/button_ex7_2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业7-2 - TabLayout和Fragment" />
+
+            <Button
+                android:id="@+id/button_ex7_3"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业7-3 - 抽屉页与导航视图" />
+
+            <Button
+                android:id="@+id/button_ex8"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业8 - 多线程" />
+
+            <Button
+                android:id="@+id/button_ex6"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业6 - Service" />
+
+            <Button
+                android:id="@+id/button_ex_json"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Topic - Json" />
+
+            <Button
+                android:id="@+id/button_ex10"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业10 - Broadcast和Receiver" />
+
+            <Button
+                android:id="@+id/button_ex11"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业11 - 数据存储与访问" />
+
+            <Button
+                android:id="@+id/button_ex12"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="实习12~13 - 数据存储与访问2" />
+        </GridLayout>
+
+    </ScrollView>
+
 </LinearLayout>

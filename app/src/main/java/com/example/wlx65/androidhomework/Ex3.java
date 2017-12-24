@@ -3,7 +3,10 @@ package com.example.wlx65.androidhomework;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.TimePickerDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -18,7 +21,9 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TimePicker;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 
 public class Ex3 extends MyActivity {
@@ -45,8 +50,11 @@ public class Ex3 extends MyActivity {
         ArrayAdapter<String> adp = new ArrayAdapter<String>(
                 this, android.R.layout.simple_dropdown_item_1line
         );
-        for (int i = 0; i < 100;  ++i) {
-            adp.add("item" + i);
+        SensorManager sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        List<Sensor> sensors = sensorManager.getSensorList(Sensor.TYPE_ALL);
+        adp.add(sensors.size() + "sensors:");
+        for (Sensor sensor : sensors) {
+            adp.add(sensor.getName());
         }
         listView1.setAdapter(adp);
 
