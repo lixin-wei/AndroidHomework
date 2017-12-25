@@ -15,6 +15,7 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 public class MyActivity extends AppCompatActivity {
+    public static String MY_ACTION = "com.hznu.test.msg";
     private Toast toast_current;
     //标题栏的返回按钮
     @Override

@@ -74,6 +74,13 @@
                 android:text="作业5 - Menu" />
 
             <Button
+                android:id="@+id/button_ex6"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="作业6 - Service" />
+
+            <Button
                 android:id="@+id/button_ex7_1"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_height="wrap_content"
@@ -100,13 +107,6 @@
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:text="作业8 - 多线程" />
-
-            <Button
-                android:id="@+id/button_ex6"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="作业6 - Service" />
 
             <Button
                 android:id="@+id/button_ex_json"

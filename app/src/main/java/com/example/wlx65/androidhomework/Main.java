@@ -122,5 +122,12 @@ public class Main extends MyActivity {
                 startActivity(intent);
             }
         });
+        button_ex10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Main.this, Ex_10.class);
+                startActivity(intent);
+            }
+        });
     }
 }

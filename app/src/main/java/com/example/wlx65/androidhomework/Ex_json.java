@@ -157,5 +157,4 @@ public class Ex_json extends MyActivity {
             }
         });
     }
-
 }
